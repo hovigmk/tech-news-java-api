@@ -1,8 +1,12 @@
 package java.com.technews.model;
-
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.sun.istack.NotNull;
 import java.beans.Transient;
 import java.io.Serializable;
 import java.util.Objects;
+import java.util.Date;
+import java.util.List;
+import javax.persistence.*;
 
 @Entity
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
